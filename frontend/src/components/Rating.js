@@ -49,7 +49,7 @@ function Rating({ value, text, color }) {
             </span>
             <span>
                 <i style={{ color }} className={
-                    value >= 4
+                    value >= 5
                         ? 'fas fa-star'
                         : value >= 4.5
                             ? 'fas fa-star-half-alt'
@@ -58,6 +58,7 @@ function Rating({ value, text, color }) {
 
                 </i>
             </span>
+            <span>{text && text}</span>
         </div>
     )
 }
